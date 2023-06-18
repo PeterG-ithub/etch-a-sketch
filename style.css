@@ -5,34 +5,57 @@
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cookie', Arial, Helvetica, sans-serif;
     align-self: center;
+    font-size: 70px;
+    margin-top: 5px;
 }
 
 body {
-    background-color: #00b8b8;
+    background-color: #8EE3EF;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 50px
 }
 
 .main-container {
     flex-direction: column;
-    background-color: #800012;
-    align-self: center;
-    margin-top: 100px;
+    background-color: #f75c5c;
+    border-radius: 2em;
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
 }
 
 .grid-container {
-    background-color: lightgray;
-    width: 500px;
-    height: 500px;
-    margin: 50px;
+    background-color: rgb(233, 233, 233);
+    width: 960px;
+    height: 665px;
+    margin: 0 65px;
     display: flex;
     flex-wrap: wrap;
+    border: 0.5px solid;
+    border-radius: 5px;
 }
 
 .test {
-    background-color:bisque;
+    background-color:rgb(0, 0, 0);
+}
+
+.button-container {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+btn {
+    font-size: 40px;
+    font-weight: 700;
+    background-color: white;
+    padding: 50px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    box-shadow:
 }
