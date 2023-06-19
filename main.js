@@ -31,7 +31,12 @@ function resetBoard() {
 
 function promptSize() {
     let width = prompt("Please enter your desired width", "16");
-    createGrid(width);
+    if (Number.isInteger(Number(width))) {
+        createGrid(width);
+    } else {
+        alert("Please enter an integer!!");
+        return;
+    }
 }
 
 function deleteGrid() {
@@ -39,3 +44,5 @@ function deleteGrid() {
         gridContainer.removeChild(gridContainer.firstChild);
     }
 }
+
+createGrid(16);
