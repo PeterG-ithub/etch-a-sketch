@@ -5,6 +5,7 @@ const eraseBtn = document.querySelector('.erase-btn');
 eraseBtn.addEventListener('click', () => resetBoard());
 sizeBtn.addEventListener('click', () => promptSize());
 function createGrid(width) {
+    deleteGrid();
     let divSize = 900/width;
     let numOfRows = Math.round(width/1.8);
     console.log(numOfRows);
@@ -28,4 +29,13 @@ function resetBoard() {
     });
 }
 
-createGrid(81);
+function promptSize() {
+    let width = prompt("Please enter your desired width", "16");
+    createGrid(width);
+}
+
+function deleteGrid() {
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+    }
+}
